@@ -17,13 +17,13 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                bat 'docker build -t devops-practical-3 .'
+                bat ' "C:/Users/praka/AppData/Local/Programs/DockerDesktop/resources/bin/docker.exe" build -t devops-practical-3 .'
             }
         }
 
         stage('Run Docker Container') {
             steps {
-                bat 'docker run --rm devops-practical-3'
+                bat ' "C:/Users/praka/AppData/Local/Programs/DockerDesktop/resources/bin/docker.exe" --rm devops-practical-3'
             }
         }
     }
