@@ -11,7 +11,7 @@ pipeline {
 
         stage('Run Application') {
             steps {
-                bat 'python3 app.py'
+                bat ' "C:\Users\praka\AppData\Local\Python\bin\python.exe" app.py'
             }
         }
 
