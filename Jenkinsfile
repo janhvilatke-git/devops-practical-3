@@ -23,7 +23,7 @@ pipeline {
 
         stage('Run Docker Container') {
             steps {
-                bat ' "C:/Users/praka/AppData/Local/Programs/DockerDesktop/resources/bin/docker.exe" --rm devops-practical-3'
+                bat ' "C:/Users/praka/AppData/Local/Programs/DockerDesktop/resources/bin/docker.exe" run --rm devops-practical-3'
             }
         }
     }
